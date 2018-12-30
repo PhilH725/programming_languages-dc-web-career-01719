@@ -8,6 +8,7 @@ def reformat_languages(languages)
         new_hash[language_name][:style] << language_att_hash[:style]
       else
         new_hash[language_name] = {:type => language_att_hash[:type], :style => [style]}
+      end
     end
   end
   new_hash
