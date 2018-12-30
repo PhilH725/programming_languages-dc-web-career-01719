@@ -6,7 +6,7 @@ def reformat_languages(languages)
     language_hash.each do |language_name, language_att_hash|
       if new_hash[language_name]
         new_hash[language_name][:style] << language_att_hash[:style]
-        puts new_hash[language_name][:style]
+        puts language_att_hash[:style]
       else
         new_hash[language_name] = {:type => language_att_hash[:type], :style => [style]}
       end
